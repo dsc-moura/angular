@@ -1,0 +1,19 @@
+<section class="container">
+
+    <form class="formulario" (ngSubmit)="transferencia()">
+      <mat-form-field class="form-field">
+        <mat-label for="valor">Valor</mat-label>
+        <input matInput id="valor" type="number" [(ngModel)]="valor" name="destino" placeholder="Valor">
+      </mat-form-field>
+
+      <mat-form-field class="form-field">
+        <mat-label for="destino">Destino</mat-label>
+        <input matInput id="destino" type="text" [(ngModel)]="destino" name="destino" placeholder="destino">
+      </mat-form-field>
+
+      <div class="botao-wrapper">
+        <button class="botao" type="submit" mat-raised-button>Transferir</button>
+      </div>
+
+    </form>
+  </section>

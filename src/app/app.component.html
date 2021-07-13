@@ -1,0 +1,11 @@
+<button mat-button [matMenuTriggerFor]="belowMenu">Menu</button>
+<mat-menu #belowMenu="matMenu" yPosition="below">
+  <button mat-menu-item routerLink="esquema-contabil">Esquema Contábil</button>
+  <button mat-menu-item routerLink="extrato-contabil">Extrato Contábil</button>
+</mat-menu>
+
+
+
+<router-outlet></router-outlet>
+
+
